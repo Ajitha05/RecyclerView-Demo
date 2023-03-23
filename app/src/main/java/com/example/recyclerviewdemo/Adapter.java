@@ -14,7 +14,10 @@ import java.util.List;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     private List<ModelClass> userList;
     
-    public Adapter(List<ModelClass>userList){this.userList=userList;}
+    public Adapter(List<ModelClass>userList)
+    {
+        this.userList=userList;
+    }
     
     
     
@@ -33,7 +36,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         String msg = userList.get(position).getTextview3();
         String time = userList.get(position).getTextview2();
         String line = userList.get(position).getDivider();
-        
+
         holder.setData(resources,name,msg,time,line);
         
 
@@ -46,17 +49,17 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         
-        private ImageView imageView;
-        private TextView textView;
-        private TextView textView2;
-        private TextView textView3;
-        private TextView divider;
+        private final ImageView imageView;
+        private final TextView textView;
+        private final TextView textView2;
+        private final TextView textView3;
+        private final TextView divider;
         
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             
             imageView = itemView.findViewById(R.id.imageview1);
-            textView = itemView.findViewById(R.id.textview);
+            textView = itemView.findViewById(R.id.textview1);
             textView2 = itemView.findViewById(R.id.textview2);
             textView3 = itemView.findViewById(R.id.textview3);
             divider = itemView.findViewById(R.id.divider);
@@ -69,8 +72,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
             imageView.setImageResource(resources);
             textView.setText(name);
-            textView3.setText(msg);
-            textView2.setText(time);
+            textView2.setText(msg);
+            textView3.setText(time);
             divider.setText(line);
         }
     }

@@ -10,7 +10,7 @@ public class ModelClass {
     ModelClass(int imageview1, String TextView1, String TextView2,String TextView3,String divider){
         this.imageview1=imageview1;
         this.textView1 = TextView1;
-        this.textview2=textview2;
+        this.textview2=TextView2;
         this.textView3 = TextView3;
         this.divider = divider;
 
