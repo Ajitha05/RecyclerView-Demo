@@ -19,8 +19,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         this.userList=userList;
     }
     
-    
-    
+
     @NonNull
     @Override
     public Adapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

@@ -31,26 +31,26 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         userList = new ArrayList<>();
-        userList.add(new ModelClass(R.drawable.p3,"Aravinth","how are you","10:45Am","________________________________"));
-        userList.add(new ModelClass(R.drawable.p1,"Brijesh","hi","1:00Pm","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p3,"Aravinth","1.00p","hi","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p1,"Brijesh","2.00pm","hello","_______________________________________"));
 
-        userList.add(new ModelClass(R.drawable.p2,"Sam","hello","good","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p2,"Sam","3.00pm","good","_______________________________________"));
 
-        userList.add(new ModelClass(R.drawable.p4,"Divya","good","I am fine","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p4,"Divya","4.00pm","I am fine","_______________________________________"));
 
-        userList.add(new ModelClass(R.drawable.p5,"Simran","fine","nice","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p5,"Simran","5.00pm","nice","_______________________________________"));
 
-        userList.add(new ModelClass(R.drawable.p6,"Kiran","I am fine","How are you?","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p6,"Kiran","6.00pm","How are you?","_______________________________________"));
 
-        userList.add(new ModelClass(R.drawable.p7,"Sameer","hi","good","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p7,"Sameer","7.00pm","good","_______________________________________"));
 
-        userList.add(new ModelClass(R.drawable.p8,"Baby","Tell","hii","_______________________________________"));
-        userList.add(new ModelClass(R.drawable.p3,"Aravinth","good","how are you","_______________________________"));
-        userList.add(new ModelClass(R.drawable.p1,"Brijesh","How are you","hlo","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p8,"Baby","8.00pm","hii","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p3,"Aravinth","9.00pm","how are you","_______________________________"));
+        userList.add(new ModelClass(R.drawable.p1,"Brijesh","11.00am","hlo","_______________________________________"));
 
-        userList.add(new ModelClass(R.drawable.p2,"Sam","fine"," hi","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p2,"Sam","10.00am"," hi","_______________________________________"));
 
-        userList.add(new ModelClass(R.drawable.p4,"Akash","good","hello","_______________________________________"));
+        userList.add(new ModelClass(R.drawable.p4,"Akash","12.00pm","hello","_______________________________________"));
 
 
 
@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         adapter = new Adapter(userList);
         recyclerView.setAdapter(adapter);
+
 
 
 

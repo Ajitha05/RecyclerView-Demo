@@ -17,70 +17,64 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
             <ImageView
                 android:id="@+id/imageview1"
                 android:layout_width="96dp"
                 android:layout_height="91dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
                 android:src="@drawable/p3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="20dp"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="0dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textview1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="28dp"
+                android:layout_width="78dp"
+                android:layout_height="24dp"
                 android:text="Aravinth"
-                android:textSize="17dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="120dp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteX="116dp" />
-
-
-            <TextView
-                android:id="@+id/textview2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="28dp"
-                android:text="10:45Am"
-                android:textSize="17dp"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="290dp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteX="116dp" />
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toTopOf="@id/imageview1"
+                app:layout_constraintRight_toRightOf="@id/imageview1"
+                app:layout_constraintStart_toEndOf="@+id/imageview1" />
 
             <TextView
                 android:id="@+id/textview3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="68dp"
-                android:text="How are you?"
-                android:textSize="17dp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="120dp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteX="116dp" />
+                android:layout_width="98dp"
+                android:layout_height="24dp"
+                android:text="10:45Pm"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="@id/textview1" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="98dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="32dp"
+                android:text="How are you ?"
+                android:layout_marginStart="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/textview1"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="@+id/textview1"
+                app:layout_constraintTop_toTopOf="@id/textview1" />
 
             <TextView
                 android:id="@+id/divider"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="108dp"
-                android:text="@string/gj"
-                android:textSize="17dp"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="120dp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteX="116dp" />
-
-
+                android:layout_height="29dp"
+                android:layout_marginEnd="-19dp"
+                android:layout_marginTop="42dp"
+                android:text="___________________________"
+                android:layout_marginStart="43dp"
+                app:layout_constraintEnd_toEndOf="@+id/textview2"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="@+id/textview2"
+                app:layout_constraintTop_toTopOf="@id/textview2"
+                />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
